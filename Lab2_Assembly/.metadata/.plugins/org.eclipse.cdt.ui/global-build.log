@@ -1,0 +1,494 @@
+15:25:25 **** Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Building file: ../startup/startup_stm32f0xx.S
+Building file: ../src/syscalls.c
+Building file: ../src/system_stm32f0xx.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Building file: ../Utilities/stm32f0_discovery.c
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/startup_stm32f0xx.d" -MT"startup/startup_stm32f0xx.o" -o "startup/startup_stm32f0xx.o" "../startup/startup_stm32f0xx.S"
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f0xx.d" -MT"src/system_stm32f0xx.o" -o "src/system_stm32f0xx.o" "../src/system_stm32f0xx.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Utilities/stm32f0_discovery.d" -MT"Utilities/stm32f0_discovery.o" -o "Utilities/stm32f0_discovery.o" "../Utilities/stm32f0_discovery.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_adc.d" -MT"StdPeriph_Driver/src/stm32f0xx_adc.o" -o "StdPeriph_Driver/src/stm32f0xx_adc.o" "../StdPeriph_Driver/src/stm32f0xx_adc.c"
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_comp.d" -MT"StdPeriph_Driver/src/stm32f0xx_comp.o" -o "StdPeriph_Driver/src/stm32f0xx_comp.o" "../StdPeriph_Driver/src/stm32f0xx_comp.c"
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_cec.d" -MT"StdPeriph_Driver/src/stm32f0xx_cec.o" -o "StdPeriph_Driver/src/stm32f0xx_cec.o" "../StdPeriph_Driver/src/stm32f0xx_cec.c"
+Finished building: ../src/main.s
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crc.d" -MT"StdPeriph_Driver/src/stm32f0xx_crc.o" -o "StdPeriph_Driver/src/stm32f0xx_crc.o" "../StdPeriph_Driver/src/stm32f0xx_crc.c"
+Finished building: ../startup/startup_stm32f0xx.S
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+../src/system_stm32f0xx.c: In function 'SetSysClock':
+../src/system_stm32f0xx.c:273:37: warning: unused variable 'HSEStatus' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+Invoking: MCU GCC Compiler
+                                     ^~~~~~~~~
+../src/system_stm32f0xx.c:273:17: warning: unused variable 'StartUpCounter' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                 ^~~~~~~~~~~~~~
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dac.d" -MT"StdPeriph_Driver/src/stm32f0xx_dac.o" -o "StdPeriph_Driver/src/stm32f0xx_dac.o" "../StdPeriph_Driver/src/stm32f0xx_dac.c"
+Finished building: ../Utilities/stm32f0_discovery.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Finished building: ../src/syscalls.c
+Finished building: ../src/system_stm32f0xx.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+Invoking: MCU GCC Compiler
+ 
+ 
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+ 
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dma.d" -MT"StdPeriph_Driver/src/stm32f0xx_dma.o" -o "StdPeriph_Driver/src/stm32f0xx_dma.o" "../StdPeriph_Driver/src/stm32f0xx_dma.c"
+ 
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_exti.d" -MT"StdPeriph_Driver/src/stm32f0xx_exti.o" -o "StdPeriph_Driver/src/stm32f0xx_exti.o" "../StdPeriph_Driver/src/stm32f0xx_exti.c"
+ 
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_flash.d" -MT"StdPeriph_Driver/src/stm32f0xx_flash.o" -o "StdPeriph_Driver/src/stm32f0xx_flash.o" "../StdPeriph_Driver/src/stm32f0xx_flash.c"
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f0xx_gpio.o" -o "StdPeriph_Driver/src/stm32f0xx_gpio.o" "../StdPeriph_Driver/src/stm32f0xx_gpio.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f0xx_i2c.o" -o "StdPeriph_Driver/src/stm32f0xx_i2c.o" "../StdPeriph_Driver/src/stm32f0xx_i2c.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_iwdg.o" "../StdPeriph_Driver/src/stm32f0xx_iwdg.c"
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_misc.d" -MT"StdPeriph_Driver/src/stm32f0xx_misc.o" -o "StdPeriph_Driver/src/stm32f0xx_misc.o" "../StdPeriph_Driver/src/stm32f0xx_misc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f0xx_pwr.o" -o "StdPeriph_Driver/src/stm32f0xx_pwr.o" "../StdPeriph_Driver/src/stm32f0xx_pwr.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rcc.o" -o "StdPeriph_Driver/src/stm32f0xx_rcc.o" "../StdPeriph_Driver/src/stm32f0xx_rcc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+Invoking: MCU GCC Compiler
+ 
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rtc.o" -o "StdPeriph_Driver/src/stm32f0xx_rtc.o" "../StdPeriph_Driver/src/stm32f0xx_rtc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+ 
+ 
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+Building file: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+ 
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_tim.d" -MT"StdPeriph_Driver/src/stm32f0xx_tim.o" -o "StdPeriph_Driver/src/stm32f0xx_tim.o" "../StdPeriph_Driver/src/stm32f0xx_tim.c"
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_spi.d" -MT"StdPeriph_Driver/src/stm32f0xx_spi.o" -o "StdPeriph_Driver/src/stm32f0xx_spi.o" "../StdPeriph_Driver/src/stm32f0xx_spi.c"
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f0xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f0xx_syscfg.o" "../StdPeriph_Driver/src/stm32f0xx_syscfg.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_usart.d" -MT"StdPeriph_Driver/src/stm32f0xx_usart.o" -o "StdPeriph_Driver/src/stm32f0xx_usart.o" "../StdPeriph_Driver/src/stm32f0xx_usart.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_wwdg.o" "../StdPeriph_Driver/src/stm32f0xx_wwdg.c"
+../StdPeriph_Driver/src/stm32f0xx_rtc.c: In function 'RTC_DeInit':
+../StdPeriph_Driver/src/stm32f0xx_rtc.c:311:17: warning: unused variable 'wutcounter' [-Wunused-variable]
+   __IO uint32_t wutcounter = 0x00;
+                 ^~~~~~~~~~
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1136	   1136	    196	   2468	    9a4	lab2.elf
+ 
+15:25:29 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:25:42 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:29:14 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1144	   1136	    196	   2476	    9ac	lab2.elf
+ 
+15:30:15 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:30:17 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:35:04 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:37:48 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1136	    196	   2484	    9b4	lab2.elf
+ 
+15:38:48 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1136	    196	   2484	    9b4	lab2.elf
+ 
+15:42:13 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1136	    196	   2484	    9b4	lab2.elf
+ 
+15:59:38 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1168	    196	   2516	    9d4	lab2.elf
+ 
+15:59:51 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:00:39 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+src/main.o: In function `check1':
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug/../src/main.s:43: undefined reference to `endfor1'
+collect2: error: ld returned 1 exit status
+makefile:36: recipe for target 'lab2.elf' failed
+make: *** [lab2.elf] Error 1
+16:01:06 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1168	    196	   2516	    9d4	lab2.elf
+ 
+16:19:30 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1212	   1168	    196	   2576	    a10	lab2.elf
+ 
+16:19:35 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:21:29 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:22:22 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:22:58 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:23:03 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:24:45 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1212	   1168	    196	   2576	    a10	lab2.elf
+ 
+16:25:08 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:28:55 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1212	   1168	    196	   2576	    a10	lab2.elf
+ 
+16:29:03 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:31:23 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1212	   1168	    196	   2576	    a10	lab2.elf
+ 
+17:06:57 **** Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1152	   1168	    196	   2516	    9d4	lab2.elf
+ 
+17:07:02 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:07:03 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:07:23 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:08:45 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:09:17 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/CMSIS/core" -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab2/lab2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab2.elf" @"objects.list"   -lm
+Finished building target: lab2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab2.elf" "lab2.bin"
+arm-none-eabi-size "lab2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1212	   1168	    196	   2576	    a10	lab2.elf
+ 
+17:09:56 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:10:03 **** Incremental Build of configuration Debug for project lab2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.

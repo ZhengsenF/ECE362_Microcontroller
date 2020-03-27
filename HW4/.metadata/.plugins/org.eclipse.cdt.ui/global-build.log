@@ -1,0 +1,1369 @@
+12:36:30 **** Clean-only build of configuration Debug for project HW4 ****
+make -j8 clean 
+rm -rf *
+ 
+12:36:31 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../startup/startup_stm32f0xx.S
+Building file: ../src/hw4.s
+Invoking: MCU GCC Compiler
+Building file: ../src/main.c
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+Building file: ../src/stdio.s
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/startup_stm32f0xx.d" -MT"startup/startup_stm32f0xx.o" -o "startup/startup_stm32f0xx.o" "../startup/startup_stm32f0xx.S"
+Building file: ../src/syscalls.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+Invoking: MCU GCC Compiler
+Building file: ../src/system_stm32f0xx.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/stdio.o" "../src/stdio.s"
+Building file: ../Utilities/stm32f0_discovery.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f0xx.d" -MT"src/system_stm32f0xx.o" -o "src/system_stm32f0xx.o" "../src/system_stm32f0xx.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Utilities/stm32f0_discovery.d" -MT"Utilities/stm32f0_discovery.o" -o "Utilities/stm32f0_discovery.o" "../Utilities/stm32f0_discovery.c"
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_adc.d" -MT"StdPeriph_Driver/src/stm32f0xx_adc.o" -o "StdPeriph_Driver/src/stm32f0xx_adc.o" "../StdPeriph_Driver/src/stm32f0xx_adc.c"
+Finished building: ../src/hw4.s
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_cec.d" -MT"StdPeriph_Driver/src/stm32f0xx_cec.o" -o "StdPeriph_Driver/src/stm32f0xx_cec.o" "../StdPeriph_Driver/src/stm32f0xx_cec.c"
+Finished building: ../src/stdio.s
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_comp.d" -MT"StdPeriph_Driver/src/stm32f0xx_comp.o" -o "StdPeriph_Driver/src/stm32f0xx_comp.o" "../StdPeriph_Driver/src/stm32f0xx_comp.c"
+../src/system_stm32f0xx.c: In function 'SetSysClock':
+../src/system_stm32f0xx.c:273:37: warning: unused variable 'HSEStatus' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                                     ^~~~~~~~~
+../src/system_stm32f0xx.c:273:17: warning: unused variable 'StartUpCounter' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                 ^~~~~~~~~~~~~~
+Finished building: ../startup/startup_stm32f0xx.S
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crc.d" -MT"StdPeriph_Driver/src/stm32f0xx_crc.o" -o "StdPeriph_Driver/src/stm32f0xx_crc.o" "../StdPeriph_Driver/src/stm32f0xx_crc.c"
+Finished building: ../Utilities/stm32f0_discovery.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dac.d" -MT"StdPeriph_Driver/src/stm32f0xx_dac.o" -o "StdPeriph_Driver/src/stm32f0xx_dac.o" "../StdPeriph_Driver/src/stm32f0xx_dac.c"
+Finished building: ../src/main.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c"
+Finished building: ../src/system_stm32f0xx.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dma.d" -MT"StdPeriph_Driver/src/stm32f0xx_dma.o" -o "StdPeriph_Driver/src/stm32f0xx_dma.o" "../StdPeriph_Driver/src/stm32f0xx_dma.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_exti.d" -MT"StdPeriph_Driver/src/stm32f0xx_exti.o" -o "StdPeriph_Driver/src/stm32f0xx_exti.o" "../StdPeriph_Driver/src/stm32f0xx_exti.c"
+Finished building: ../src/syscalls.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_flash.d" -MT"StdPeriph_Driver/src/stm32f0xx_flash.o" -o "StdPeriph_Driver/src/stm32f0xx_flash.o" "../StdPeriph_Driver/src/stm32f0xx_flash.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f0xx_gpio.o" -o "StdPeriph_Driver/src/stm32f0xx_gpio.o" "../StdPeriph_Driver/src/stm32f0xx_gpio.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f0xx_i2c.o" -o "StdPeriph_Driver/src/stm32f0xx_i2c.o" "../StdPeriph_Driver/src/stm32f0xx_i2c.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_iwdg.o" "../StdPeriph_Driver/src/stm32f0xx_iwdg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_misc.d" -MT"StdPeriph_Driver/src/stm32f0xx_misc.o" -o "StdPeriph_Driver/src/stm32f0xx_misc.o" "../StdPeriph_Driver/src/stm32f0xx_misc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f0xx_pwr.o" -o "StdPeriph_Driver/src/stm32f0xx_pwr.o" "../StdPeriph_Driver/src/stm32f0xx_pwr.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rcc.o" -o "StdPeriph_Driver/src/stm32f0xx_rcc.o" "../StdPeriph_Driver/src/stm32f0xx_rcc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rtc.o" -o "StdPeriph_Driver/src/stm32f0xx_rtc.o" "../StdPeriph_Driver/src/stm32f0xx_rtc.c"
+../StdPeriph_Driver/src/stm32f0xx_rtc.c: In function 'RTC_DeInit':
+../StdPeriph_Driver/src/stm32f0xx_rtc.c:311:17: warning: unused variable 'wutcounter' [-Wunused-variable]
+   __IO uint32_t wutcounter = 0x00;
+                 ^~~~~~~~~~
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_spi.d" -MT"StdPeriph_Driver/src/stm32f0xx_spi.o" -o "StdPeriph_Driver/src/stm32f0xx_spi.o" "../StdPeriph_Driver/src/stm32f0xx_spi.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f0xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f0xx_syscfg.o" "../StdPeriph_Driver/src/stm32f0xx_syscfg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_tim.d" -MT"StdPeriph_Driver/src/stm32f0xx_tim.o" -o "StdPeriph_Driver/src/stm32f0xx_tim.o" "../StdPeriph_Driver/src/stm32f0xx_tim.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_usart.d" -MT"StdPeriph_Driver/src/stm32f0xx_usart.o" -o "StdPeriph_Driver/src/stm32f0xx_usart.o" "../StdPeriph_Driver/src/stm32f0xx_usart.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_wwdg.o" "../StdPeriph_Driver/src/stm32f0xx_wwdg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34020	   2500	    256	  36776	   8fa8	HW4.elf
+ 
+12:37:31 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:38:13 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:38:45 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:39:02 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:21:45 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34036	   2500	    256	  36792	   8fb8	HW4.elf
+ 
+16:22:14 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:25:07 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:27:36 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34052	   2500	    256	  36808	   8fc8	HW4.elf
+ 
+16:28:03 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34060	   2500	    256	  36816	   8fd0	HW4.elf
+ 
+16:34:34 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34100	   2500	    256	  36856	   8ff8	HW4.elf
+ 
+16:35:01 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:47: Error: invalid offset, target not word aligned (0x00000052)
+../src/hw4.s:47: Error: invalid offset, value too big (0x00000016)
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+16:35:09 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34108	   2500	    256	  36864	   9000	HW4.elf
+ 
+16:46:19 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:79: Error: bad instruction `be endif1'
+../src/hw4.s:98: Error: cannot honor width suffix -- `pop {r4-r7,lr}'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+16:46:54 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:98: Error: cannot honor width suffix -- `pop {r4-r7,lr}'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+16:47:22 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34156	   2500	    256	  36912	   9030	HW4.elf
+ 
+16:47:25 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:53:15 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34164	   2500	    256	  36920	   9038	HW4.elf
+ 
+16:53:45 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:57:05 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34172	   2500	    256	  36928	   9040	HW4.elf
+ 
+16:57:40 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:58:33 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:58:39 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:58:45 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:01:45 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+17:17:37 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  34164	   2500	    256	  36920	   9038	HW4.elf
+ 
+13:45:32 **** Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:47:34 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:48:06 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:05:35 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `sub sp,r1'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+../src/hw4.s:127: Error: r13 not allowed here -- `movs r1,sp'
+../src/hw4.s:133: Error: bad instruction `beg endfor1'
+../src/hw4.s:138: Error: cannot honor width suffix -- `mul r3,r4'
+../src/hw4.s:139: Error: bad arguments to instruction -- `ldr r4=0xff'
+make: *** [src/hw4.o] Error 1
+14:06:26 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,r1'
+../src/hw4.s:127: Error: r13 not allowed here -- `movs r1,sp'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:06:29 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,r1'
+../src/hw4.s:127: Error: r13 not allowed here -- `movs r1,sp'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:06:41 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:127: Error: r13 not allowed here -- `movs r1,sp'
+../src/hw4.s:126: Error: invalid immediate for stack address calculation
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:06:57 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,r1'
+../src/hw4.s:127: Error: r13 not allowed here -- `movs r1,sp'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:07:15 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,r1'
+../src/hw4.s:127: Error: r13 not allowed here -- `movs r1,sp'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:07:41 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: invalid immediate for stack address calculation
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:08:26 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,r1'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:08:36 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,r1'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:12:34 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,sp,r1'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:14:21 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,sp,r1'
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:14:26 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,sp,r1'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:14:29 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: cannot honor width suffix -- `subs sp,sp,r1'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:14:43 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35636	   2500	    256	  38392	   95f8	HW4.elf
+ 
+14:14:47 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:14:49 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:14:51 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:14:53 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:126: Error: invalid immediate for stack address calculation
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:14:57 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35636	   2500	    256	  38392	   95f8	HW4.elf
+ 
+14:15:08 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:15:36 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35636	   2500	    256	  38392	   95f8	HW4.elf
+ 
+14:15:50 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:16:00 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35636	   2500	    256	  38392	   95f8	HW4.elf
+ 
+14:16:12 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35636	   2500	    256	  38392	   95f8	HW4.elf
+ 
+14:16:29 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35644	   2500	    256	  38400	   9600	HW4.elf
+ 
+14:16:39 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35636	   2500	    256	  38392	   95f8	HW4.elf
+ 
+14:25:57 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:25:58 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:168: Error: invalid immediate for stack address calculation
+../src/hw4.s:169: Error: invalid immediate for stack address calculation
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:26:10 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:169: Error: lo register required -- `adds sp,#77'
+../src/hw4.s:168: Error: invalid immediate for stack address calculation
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:26:49 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:168: Error: invalid immediate for stack address calculation
+../src/hw4.s:169: Error: invalid immediate for stack address calculation
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:26:52 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:168: Error: invalid immediate for stack address calculation
+../src/hw4.s:169: Error: invalid immediate for stack address calculation
+make: *** [src/hw4.o] Error 1
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+14:26:58 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35644	   2500	    256	  38400	   9600	HW4.elf
+ 
+14:31:59 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:170: Error: r13 not allowed here -- `movs r4,sp'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+14:32:06 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36348	   2500	    256	  39104	   98c0	HW4.elf
+ 
+14:32:34 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:32:53 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:35:09 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:35:25 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:41:04 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:47:09 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36244	   2500	    256	  39000	   9858	HW4.elf
+ 
+14:50:22 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36244	   2500	    256	  39000	   9858	HW4.elf
+ 
+14:50:47 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:51:35 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36244	   2500	    256	  39000	   9858	HW4.elf
+ 
+15:05:57 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:197: Error: r13 not allowed here -- `movs r4,sp'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+15:06:02 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36308	   2500	    256	  39064	   9898	HW4.elf
+ 
+15:06:18 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:06:38 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36308	   2500	    256	  39064	   9898	HW4.elf
+ 
+15:08:11 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36308	   2500	    256	  39064	   9898	HW4.elf
+ 
+15:10:07 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:36:09 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36316	   2500	    256	  39072	   98a0	HW4.elf
+ 
+15:36:25 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36316	   2500	    256	  39072	   98a0	HW4.elf
+ 
+15:36:55 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Building file: ../src/main.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/hw4.s
+ 
+Finished building: ../src/main.c
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   2500	    256	  39168	   9900	HW4.elf
+ 
+15:37:03 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:37:08 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:37:26 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   2500	    256	  39168	   9900	HW4.elf
+ 
+15:37:37 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   2500	    256	  39168	   9900	HW4.elf
+ 
+15:37:39 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:37:56 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:38:04 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:38:24 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:39:45 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   2500	    256	  39168	   9900	HW4.elf
+ 
+15:39:56 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36412	   2500	    256	  39168	   9900	HW4.elf
+ 
+15:52:40 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36468	   2500	    256	  39224	   9938	HW4.elf
+ 
+15:53:46 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36476	   2500	    256	  39232	   9940	HW4.elf
+ 
+15:57:23 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36476	   2500	    256	  39232	   9940	HW4.elf
+ 
+15:57:39 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:08:50 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:311: Error: missing expression -- `bge'
+../src/hw4.s:319: Error: ARM register expected -- `muls r4,#37'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+16:09:03 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+../src/hw4.s: Assembler messages:
+../src/hw4.s:319: Error: ARM register expected -- `muls r4,r4,#37'
+src/subdir.mk:30: recipe for target 'src/hw4.o' failed
+make: *** [src/hw4.o] Error 1
+16:09:17 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36524	   2500	    256	  39280	   9970	HW4.elf
+ 
+16:13:24 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36548	   2500	    256	  39304	   9988	HW4.elf
+ 
+16:13:56 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:38:47 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36604	   2516	    256	  39376	   99d0	HW4.elf
+ 
+16:49:13 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36652	   2516	    256	  39424	   9a00	HW4.elf
+ 
+16:49:25 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+Building file: ../src/hw4.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/CMSIS/core" -g -o "src/hw4.o" "../src/hw4.s"
+Finished building: ../src/hw4.s
+ 
+Building target: HW4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW4/HW4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW4.elf" @"objects.list"   -lm
+Finished building target: HW4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW4.elf" "HW4.bin"
+arm-none-eabi-size "HW4.elf"
+   text	   data	    bss	    dec	    hex	filename
+  36652	   2516	    256	  39424	   9a00	HW4.elf
+ 
+16:49:27 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:50:03 **** Incremental Build of configuration Debug for project HW4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.

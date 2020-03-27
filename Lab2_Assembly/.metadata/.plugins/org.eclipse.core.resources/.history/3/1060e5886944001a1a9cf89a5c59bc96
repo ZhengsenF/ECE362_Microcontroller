@@ -1,0 +1,70 @@
+.cpu cortex-m0
+.thumb
+.syntax unified
+.fpu softvfp
+
+.data
+i: .word 0
+size: .word 4
+sum: .word 0
+source:
+.word 3
+.word 4
+.word 7
+.word 11
+.word 18
+.word 29
+.word 47
+.word 76
+.word 123
+.word 199
+.word 322
+
+
+.text
+.global main
+main:
+	// r0 = sum
+	// r1 = size
+	// r2 = i
+	movs r2, #0
+
+	ldr r1, =size
+	ldr r1, [r1] // load size into r1
+
+	movs r0, #0 // sum = 0
+
+	for:
+		movs r2, #0
+	check:
+		cmp r2, r1
+		bge endfor
+	body:
+		if:
+			movs r3, 25
+			cmp r2, r3
+			bge else
+		then:
+			// r3 = i * 4 addr of source[i]
+			lsls r3, r2, #2
+			ldr r4, [r3] //r4 = source[i]
+			adds r3, #4
+			ldr r5, [r3] //r5 = source[i+1]
+			adds r4, r5
+			adds r0, r4
+			b endif
+		else:
+			// r3 = i * 4 addr of source[i]
+			lsls r3, r2, #2
+			ldr r4, [r3] //r4 = source[i]
+			lsls r4, #1 // source[i] * 2
+			subs r0, r4
+		endif:
+	next:
+		adds r2, #1
+		b check
+	endfor:
+	ldr r4, =sum
+	str r0, [r4]
+
+    wfi

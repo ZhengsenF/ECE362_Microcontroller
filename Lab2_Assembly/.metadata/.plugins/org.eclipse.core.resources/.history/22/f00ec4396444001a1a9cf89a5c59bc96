@@ -1,0 +1,17 @@
+.cpu cortex-m0
+.thumb
+.syntax unified
+.fpu softvfp
+
+.data
+i: .word0
+size: .word 4
+sum: .word 0
+source: .space #44
+
+
+.text
+.global main
+main:
+    // Put any instructions you want here.
+    wfi

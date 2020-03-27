@@ -1,0 +1,23 @@
+15:44:25 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1664	   1080	    220	   2964	    b94	Lab5.elf
+ 
+
+15:44:26 Build Finished (took 566ms)
+

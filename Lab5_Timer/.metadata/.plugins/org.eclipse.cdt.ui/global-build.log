@@ -1,0 +1,369 @@
+13:05:41 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+../src/lab5.s: Assembler messages:
+../src/lab5.s:232: Error: invalid immediate: -2 is out of range
+src/subdir.mk:31: recipe for target 'src/lab5.o' failed
+make: *** [src/lab5.o] Error 1
+13:05:47 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1508	   1080	    220	   2808	    af8	Lab5.elf
+ 
+13:05:56 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:07:09 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+../src/lab5.s: Assembler messages:
+../src/lab5.s:232: Error: cannot honor width suffix -- `ldrb r7,=0-2'
+src/subdir.mk:31: recipe for target 'src/lab5.o' failed
+make: *** [src/lab5.o] Error 1
+13:07:16 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1508	   1080	    220	   2808	    af8	Lab5.elf
+ 
+13:07:52 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1508	   1080	    220	   2808	    af8	Lab5.elf
+ 
+14:43:22 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'testDebounce':
+../src/main.c:13:5: warning: implicit declaration of function 'init_GPIO'; did you mean 'TIM14_GPIO'? [-Wimplicit-function-declaration]
+     init_GPIO();
+     ^~~~~~~~~
+     TIM14_GPIO
+../src/main.c:14:5: warning: implicit declaration of function 'init_TIM6' [-Wimplicit-function-declaration]
+     init_TIM6();
+     ^~~~~~~~~
+../src/main.c:16:16: warning: implicit declaration of function 'getKeyPressed' [-Wimplicit-function-declaration]
+      int key = getKeyPressed();
+                ^~~~~~~~~~~~~
+../src/main.c:17:17: warning: implicit declaration of function 'getKeyReleased' [-Wimplicit-function-declaration]
+      if (key == getKeyReleased())
+                 ^~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:24:2: warning: implicit declaration of function 'testTIM6'; did you mean 'TIM6'? [-Wimplicit-function-declaration]
+  testTIM6();
+  ^~~~~~~~
+  TIM6
+Finished building: ../src/main.c
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2348	   1080	    220	   3648	    e40	Lab5.elf
+ 
+14:43:33 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'testDebounce':
+../src/main.c:13:5: warning: implicit declaration of function 'init_GPIO'; did you mean 'TIM14_GPIO'? [-Wimplicit-function-declaration]
+     init_GPIO();
+     ^~~~~~~~~
+     TIM14_GPIO
+../src/main.c:14:5: warning: implicit declaration of function 'init_TIM6' [-Wimplicit-function-declaration]
+     init_TIM6();
+     ^~~~~~~~~
+../src/main.c:16:16: warning: implicit declaration of function 'getKeyPressed' [-Wimplicit-function-declaration]
+      int key = getKeyPressed();
+                ^~~~~~~~~~~~~
+../src/main.c:17:17: warning: implicit declaration of function 'getKeyReleased' [-Wimplicit-function-declaration]
+      if (key == getKeyReleased())
+                 ^~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:25:2: warning: implicit declaration of function 'testInitGPIO' [-Wimplicit-function-declaration]
+  testInitGPIO();
+  ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1636	   1080	    220	   2936	    b78	Lab5.elf
+ 
+14:43:43 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'testDebounce':
+../src/main.c:13:5: warning: implicit declaration of function 'init_GPIO'; did you mean 'TIM14_GPIO'? [-Wimplicit-function-declaration]
+     init_GPIO();
+     ^~~~~~~~~
+     TIM14_GPIO
+../src/main.c:14:5: warning: implicit declaration of function 'init_TIM6' [-Wimplicit-function-declaration]
+     init_TIM6();
+     ^~~~~~~~~
+../src/main.c:16:16: warning: implicit declaration of function 'getKeyPressed' [-Wimplicit-function-declaration]
+      int key = getKeyPressed();
+                ^~~~~~~~~~~~~
+../src/main.c:17:17: warning: implicit declaration of function 'getKeyReleased' [-Wimplicit-function-declaration]
+      if (key == getKeyReleased())
+                 ^~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:26:2: warning: implicit declaration of function 'testProb3' [-Wimplicit-function-declaration]
+  testProb3();
+  ^~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1440	   1080	    220	   2740	    ab4	Lab5.elf
+ 
+15:02:22 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+Building file: ../src/main.c
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/lab5.s: Assembler messages:
+../src/lab5.s:151: Error: bad arguments to instruction -- `ldr r2=3'
+../src/lab5.s:164: Error: cannot honor width suffix -- `lsls r2,r1,r3'
+src/subdir.mk:31: recipe for target 'src/lab5.o' failed
+make: *** [src/lab5.o] Error 1
+make: *** Waiting for unfinished jobs....
+../src/main.c: In function 'testDebounce':
+../src/main.c:13:5: warning: implicit declaration of function 'init_GPIO'; did you mean 'TIM14_GPIO'? [-Wimplicit-function-declaration]
+     init_GPIO();
+     ^~~~~~~~~
+     TIM14_GPIO
+../src/main.c:14:5: warning: implicit declaration of function 'init_TIM6' [-Wimplicit-function-declaration]
+     init_TIM6();
+     ^~~~~~~~~
+../src/main.c:16:16: warning: implicit declaration of function 'getKeyPressed' [-Wimplicit-function-declaration]
+      int key = getKeyPressed();
+                ^~~~~~~~~~~~~
+../src/main.c:17:17: warning: implicit declaration of function 'getKeyReleased' [-Wimplicit-function-declaration]
+      if (key == getKeyReleased())
+                 ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+15:03:01 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1580	   1080	    220	   2880	    b40	Lab5.elf
+ 
+15:14:25 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1604	   1080	    220	   2904	    b58	Lab5.elf
+ 
+15:20:10 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+../src/lab5.s: Assembler messages:
+../src/lab5.s:202: Error: cannot honor width suffix -- `ands r5,#1'
+../src/lab5.s:210: Error: cannot honor width suffix -- `ands r5,#1'
+../src/lab5.s:218: Error: cannot honor width suffix -- `ands r5,#1'
+../src/lab5.s:226: Error: cannot honor width suffix -- `ands r5,#1'
+make: *** [src/lab5.o] Error 1
+src/subdir.mk:31: recipe for target 'src/lab5.o' failed
+15:20:50 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1656	   1080	    220	   2956	    b8c	Lab5.elf
+ 
+15:20:52 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:21:11 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:23:53 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1660	   1080	    220	   2960	    b90	Lab5.elf
+ 
+15:27:32 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1660	   1080	    220	   2960	    b90	Lab5.elf
+ 
+15:44:25 **** Incremental Build of configuration Debug for project Lab5 ****
+make -j8 all 
+Building file: ../src/lab5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/CMSIS/core" -g -o "src/lab5.o" "../src/lab5.s"
+Finished building: ../src/lab5.s
+ 
+Building target: Lab5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab5.elf" @"objects.list" /home/shay/a/fu216/workspace/stm32f0_test/Lab5/Lab5/src/autotest.o  -lm
+Finished building target: Lab5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab5.elf" "Lab5.bin"
+arm-none-eabi-size "Lab5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1664	   1080	    220	   2964	    b94	Lab5.elf
+ 

@@ -1,0 +1,792 @@
+21:29:05 **** Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../startup/startup_stm32f0xx.S
+Building file: ../src/hw5.s
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+Building file: ../src/syscalls.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/startup_stm32f0xx.d" -MT"startup/startup_stm32f0xx.o" -o "startup/startup_stm32f0xx.o" "../startup/startup_stm32f0xx.S"
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Building file: ../src/test.c
+Building file: ../src/system_stm32f0xx.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Building file: ../Utilities/stm32f0_discovery.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/system_stm32f0xx.d" -MT"src/system_stm32f0xx.o" -o "src/system_stm32f0xx.o" "../src/system_stm32f0xx.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Utilities/stm32f0_discovery.d" -MT"Utilities/stm32f0_discovery.o" -o "Utilities/stm32f0_discovery.o" "../Utilities/stm32f0_discovery.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_adc.d" -MT"StdPeriph_Driver/src/stm32f0xx_adc.o" -o "StdPeriph_Driver/src/stm32f0xx_adc.o" "../StdPeriph_Driver/src/stm32f0xx_adc.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_cec.d" -MT"StdPeriph_Driver/src/stm32f0xx_cec.o" -o "StdPeriph_Driver/src/stm32f0xx_cec.o" "../StdPeriph_Driver/src/stm32f0xx_cec.c"
+Finished building: ../src/hw5.s
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_comp.d" -MT"StdPeriph_Driver/src/stm32f0xx_comp.o" -o "StdPeriph_Driver/src/stm32f0xx_comp.o" "../StdPeriph_Driver/src/stm32f0xx_comp.c"
+../src/test.c: In function 'main':
+../src/test.c:39:9: warning: implicit declaration of function 'subdiv' [-Wimplicit-function-declaration]
+     x = subdiv(10);    // 1
+         ^~~~~~
+../src/system_stm32f0xx.c: In function 'SetSysClock':
+../src/system_stm32f0xx.c:273:37: warning: unused variable 'HSEStatus' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                                     ^~~~~~~~~
+../src/system_stm32f0xx.c:273:17: warning: unused variable 'StartUpCounter' [-Wunused-variable]
+   __IO uint32_t StartUpCounter = 0, HSEStatus = 0;
+                 ^~~~~~~~~~~~~~
+Finished building: ../startup/startup_stm32f0xx.S
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_crc.d" -MT"StdPeriph_Driver/src/stm32f0xx_crc.o" -o "StdPeriph_Driver/src/stm32f0xx_crc.o" "../StdPeriph_Driver/src/stm32f0xx_crc.c"
+Finished building: ../Utilities/stm32f0_discovery.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+Finished building: ../src/test.c
+Finished building: ../src/system_stm32f0xx.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_cec.c
+Invoking: MCU GCC Compiler
+ 
+ 
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dac.d" -MT"StdPeriph_Driver/src/stm32f0xx_dac.o" -o "StdPeriph_Driver/src/stm32f0xx_dac.o" "../StdPeriph_Driver/src/stm32f0xx_dac.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+Finished building: ../src/syscalls.c
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_adc.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_comp.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_crc.c
+ 
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+ 
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dbgmcu.d" -MT"StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" -o "StdPeriph_Driver/src/stm32f0xx_dbgmcu.o" "../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c"
+ 
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_dma.d" -MT"StdPeriph_Driver/src/stm32f0xx_dma.o" -o "StdPeriph_Driver/src/stm32f0xx_dma.o" "../StdPeriph_Driver/src/stm32f0xx_dma.c"
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_exti.d" -MT"StdPeriph_Driver/src/stm32f0xx_exti.o" -o "StdPeriph_Driver/src/stm32f0xx_exti.o" "../StdPeriph_Driver/src/stm32f0xx_exti.c"
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_flash.d" -MT"StdPeriph_Driver/src/stm32f0xx_flash.o" -o "StdPeriph_Driver/src/stm32f0xx_flash.o" "../StdPeriph_Driver/src/stm32f0xx_flash.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_gpio.d" -MT"StdPeriph_Driver/src/stm32f0xx_gpio.o" -o "StdPeriph_Driver/src/stm32f0xx_gpio.o" "../StdPeriph_Driver/src/stm32f0xx_gpio.c"
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_i2c.d" -MT"StdPeriph_Driver/src/stm32f0xx_i2c.o" -o "StdPeriph_Driver/src/stm32f0xx_i2c.o" "../StdPeriph_Driver/src/stm32f0xx_i2c.c"
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_iwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_iwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_iwdg.o" "../StdPeriph_Driver/src/stm32f0xx_iwdg.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dac.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_misc.d" -MT"StdPeriph_Driver/src/stm32f0xx_misc.o" -o "StdPeriph_Driver/src/stm32f0xx_misc.o" "../StdPeriph_Driver/src/stm32f0xx_misc.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dbgmcu.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_dma.c
+Invoking: MCU GCC Compiler
+ 
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_pwr.d" -MT"StdPeriph_Driver/src/stm32f0xx_pwr.o" -o "StdPeriph_Driver/src/stm32f0xx_pwr.o" "../StdPeriph_Driver/src/stm32f0xx_pwr.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_exti.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_flash.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_gpio.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_iwdg.c
+Invoking: MCU GCC Compiler
+ 
+ 
+ 
+ 
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rcc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rcc.o" -o "StdPeriph_Driver/src/stm32f0xx_rcc.o" "../StdPeriph_Driver/src/stm32f0xx_rcc.c"
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_i2c.c
+Invoking: MCU GCC Compiler
+Building file: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_rtc.d" -MT"StdPeriph_Driver/src/stm32f0xx_rtc.o" -o "StdPeriph_Driver/src/stm32f0xx_rtc.o" "../StdPeriph_Driver/src/stm32f0xx_rtc.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_spi.d" -MT"StdPeriph_Driver/src/stm32f0xx_spi.o" -o "StdPeriph_Driver/src/stm32f0xx_spi.o" "../StdPeriph_Driver/src/stm32f0xx_spi.c"
+Building file: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+ 
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_syscfg.d" -MT"StdPeriph_Driver/src/stm32f0xx_syscfg.o" -o "StdPeriph_Driver/src/stm32f0xx_syscfg.o" "../StdPeriph_Driver/src/stm32f0xx_syscfg.c"
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Building file: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_tim.d" -MT"StdPeriph_Driver/src/stm32f0xx_tim.o" -o "StdPeriph_Driver/src/stm32f0xx_tim.o" "../StdPeriph_Driver/src/stm32f0xx_tim.c"
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_usart.d" -MT"StdPeriph_Driver/src/stm32f0xx_usart.o" -o "StdPeriph_Driver/src/stm32f0xx_usart.o" "../StdPeriph_Driver/src/stm32f0xx_usart.c"
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_misc.c
+ 
+Building file: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+Invoking: MCU GCC Compiler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"StdPeriph_Driver/src/stm32f0xx_wwdg.d" -MT"StdPeriph_Driver/src/stm32f0xx_wwdg.o" -o "StdPeriph_Driver/src/stm32f0xx_wwdg.o" "../StdPeriph_Driver/src/stm32f0xx_wwdg.c"
+../StdPeriph_Driver/src/stm32f0xx_rtc.c: In function 'RTC_DeInit':
+../StdPeriph_Driver/src/stm32f0xx_rtc.c:311:17: warning: unused variable 'wutcounter' [-Wunused-variable]
+   __IO uint32_t wutcounter = 0x00;
+                 ^~~~~~~~~~
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_pwr.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_syscfg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_spi.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rcc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_rtc.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_usart.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_wwdg.c
+ 
+Finished building: ../StdPeriph_Driver/src/stm32f0xx_tim.c
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2964	   1080	    196	   4240	   1090	HW5.elf
+ 
+21:36:39 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2976	   1080	    196	   4252	   109c	HW5.elf
+ 
+21:37:40 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+Building file: ../src/test.c
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -DSTM32 -DSTM32F0 -DSTM32F051R8Tx -DSTM32F0DISCOVERY -DDEBUG -DSTM32F051 -DUSE_STDPERIPH_DRIVER -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+Finished building: ../src/hw5.s
+ 
+../src/test.c: In function 'main':
+../src/test.c:39:9: warning: implicit declaration of function 'subdiv' [-Wimplicit-function-declaration]
+     x = subdiv(10);    // 1
+         ^~~~~~
+Finished building: ../src/test.c
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2988	   1080	    196	   4264	   10a8	HW5.elf
+ 
+21:40:04 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3004	   1080	    196	   4280	   10b8	HW5.elf
+ 
+21:40:52 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:41:21 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3004	   1080	    196	   4280	   10b8	HW5.elf
+ 
+21:41:28 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3004	   1080	    196	   4280	   10b8	HW5.elf
+ 
+21:41:38 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:48:10 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3024	   1080	    196	   4300	   10cc	HW5.elf
+ 
+21:48:12 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:48:55 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:49:09 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:51:04 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3044	   1080	    196	   4320	   10e0	HW5.elf
+ 
+21:57:31 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3060	   1080	    196	   4336	   10f0	HW5.elf
+ 
+19:22:45 **** Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:128: Error: bad instruction `stor r1,[r0,#PURDR]'
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+19:22:57 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:128: Error: bad instruction `stor r1,[r0,#PUPDR]'
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+19:23:05 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3080	   1080	    196	   4356	   1104	HW5.elf
+ 
+19:23:07 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:23:32 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:29:26 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:140: Error: invalid offset, value too big (0xFFFFFFFFFFFFFFFC)
+make: *** [src/hw5.o] Error 1
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+19:29:37 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3120	   1080	    196	   4396	   112c	HW5.elf
+ 
+19:30:18 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3116	   1080	    196	   4392	   1128	HW5.elf
+ 
+19:34:44 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3148	   1080	    196	   4424	   1148	HW5.elf
+ 
+19:42:33 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3184	   1080	    196	   4460	   116c	HW5.elf
+ 
+19:45:11 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3184	   1080	    196	   4460	   116c	HW5.elf
+ 
+19:51:12 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:05:37 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:227: Error: symbol `if1' is already defined
+../src/hw5.s:233: Error: symbol `then1' is already defined
+../src/hw5.s:248: Error: symbol `endif1' is already defined
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+20:06:05 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:227: Error: symbol `if2' is already defined
+../src/hw5.s:233: Error: symbol `then2' is already defined
+../src/hw5.s:248: Error: symbol `endif2' is already defined
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+20:06:25 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:235: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:239: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:243: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:247: Error: cannot represent THUMB_OFFSET relocation in this object file format
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+20:06:55 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:235: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:239: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:243: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:247: Error: cannot represent THUMB_OFFSET relocation in this object file format
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+20:07:15 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:235: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:239: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:243: Error: cannot represent THUMB_OFFSET relocation in this object file format
+../src/hw5.s:247: Error: cannot represent THUMB_OFFSET relocation in this object file format
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+20:07:47 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3244	   1080	    196	   4520	   11a8	HW5.elf
+ 
+20:07:50 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:09:17 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:10:41 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+20:14:15 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3244	   1080	    196	   4520	   11a8	HW5.elf
+ 
+20:17:00 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3300	   1080	    196	   4576	   11e0	HW5.elf
+ 
+21:15:40 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3328	   1080	    196	   4604	   11fc	HW5.elf
+ 
+21:15:42 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:15:44 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:34:28 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3380	   1080	    196	   4656	   1230	HW5.elf
+ 
+21:34:51 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+../src/hw5.s: Assembler messages:
+../src/hw5.s:352: Error: invalid offset, value too big (0x00000100)
+src/subdir.mk:28: recipe for target 'src/hw5.o' failed
+make: *** [src/hw5.o] Error 1
+21:35:22 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3396	   1080	    196	   4672	   1240	HW5.elf
+ 
+21:35:33 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:35:52 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:42:28 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+21:45:43 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3396	   1080	    196	   4672	   1240	HW5.elf
+ 
+21:56:13 **** Incremental Build of configuration Debug for project HW5 ****
+make -j8 all 
+Building file: ../src/hw5.s
+Invoking: MCU GCC Assembler
+/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Debug
+arm-none-eabi-as -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/Utilities" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/StdPeriph_Driver/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/inc" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/device" -I"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/CMSIS/core" -g -o "src/hw5.o" "../src/hw5.s"
+Finished building: ../src/hw5.s
+ 
+Building target: HW5.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -mfloat-abi=soft -T"/home/shay/a/fu216/workspace/stm32f0_test/HW5/HW5/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "HW5.elf" @"objects.list"   -lm
+Finished building target: HW5.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "HW5.elf" "HW5.bin"
+arm-none-eabi-size "HW5.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3424	   1080	    196	   4700	   125c	HW5.elf
+ 

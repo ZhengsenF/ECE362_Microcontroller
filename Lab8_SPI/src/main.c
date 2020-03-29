@@ -98,15 +98,15 @@ void dma_display1(const char *s) {
 		dispmem[x + 1] = s[x] + 0x200;
 	}
 
-	for(x = 18; x < 34; x++) {
-		dispmem[x] = 0x220;
+	for(; x < 16; x++) {
+		dispmem[x + 1] = 0x220;
 	}
 
 	// configure DMA
 	RCC -> AHBENR |= RCC_AHBENR_DMA1EN;
 	DMA1_Channel5 -> CPAR = (uint32_t) (&(SPI2 -> DR));
 	DMA1_Channel5 -> CMAR = (uint32_t) (dispmem);
-	DMA1_Channel5 -> CNDTR = 34;
+	DMA1_Channel5 -> CNDTR = 17;
 	DMA1_Channel5 -> CCR |= DMA_CCR_DIR | DMA_CCR_MINC | DMA_CCR_MSIZE_0 | DMA_CCR_PSIZE_0;
 	DMA1_Channel5 -> CCR &= ~DMA_CCR_PINC;
 	DMA1_Channel5 -> CCR &= ~DMA_CCR_PL;
@@ -221,7 +221,7 @@ int main(void)
 {
 //    step1();
 //    step2();
-//    step3();
+    step3();
 //    step4();
-    step6();
+//    step6();
 }

@@ -4,43 +4,31 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/fifo.c \
+../src/game.c \
 ../src/main.c \
 ../src/maple-leaf-rag.c \
 ../src/midi.c \
 ../src/music.c \
-../src/screen.c \
-../src/snake.c \
-../src/snake_main.c \
 ../src/syscalls.c \
-../src/system_stm32f0xx.c \
-../src/tty.c 
+../src/system_stm32f0xx.c 
 
 OBJS += \
-./src/fifo.o \
+./src/game.o \
 ./src/main.o \
 ./src/maple-leaf-rag.o \
 ./src/midi.o \
 ./src/music.o \
-./src/screen.o \
-./src/snake.o \
-./src/snake_main.o \
 ./src/syscalls.o \
-./src/system_stm32f0xx.o \
-./src/tty.o 
+./src/system_stm32f0xx.o 
 
 C_DEPS += \
-./src/fifo.d \
+./src/game.d \
 ./src/main.d \
 ./src/maple-leaf-rag.d \
 ./src/midi.d \
 ./src/music.d \
-./src/screen.d \
-./src/snake.d \
-./src/snake_main.d \
 ./src/syscalls.d \
-./src/system_stm32f0xx.d \
-./src/tty.d 
+./src/system_stm32f0xx.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

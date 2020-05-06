@@ -17,8 +17,8 @@
 
 int main(void)
 {
+	music_init();
 	game_init();
-//	snake_init();
 	for(;;) {
 		asm("wfi");
 	}

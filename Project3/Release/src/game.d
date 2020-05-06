@@ -24,7 +24,7 @@ src/game.o: ../src/game.c D:/ECE362/Project3/CMSIS/device/stm32f0xx.h \
  D:/ECE362/Project3/StdPeriph_Driver/inc/stm32f0xx_usart.h \
  D:/ECE362/Project3/StdPeriph_Driver/inc/stm32f0xx_wwdg.h \
  D:/ECE362/Project3/StdPeriph_Driver/inc/stm32f0xx_misc.h \
- D:/ECE362/Project3/Utilities/stm32f0_discovery.h ../src/midi.h
+ D:/ECE362/Project3/Utilities/stm32f0_discovery.h
 
 D:/ECE362/Project3/CMSIS/device/stm32f0xx.h:
 
@@ -79,5 +79,3 @@ D:/ECE362/Project3/StdPeriph_Driver/inc/stm32f0xx_wwdg.h:
 D:/ECE362/Project3/StdPeriph_Driver/inc/stm32f0xx_misc.h:
 
 D:/ECE362/Project3/Utilities/stm32f0_discovery.h:
-
-../src/midi.h:

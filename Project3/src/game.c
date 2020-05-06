@@ -5,12 +5,13 @@
 #include <string.h>
 #include <stdint.h>
 #include <stdlib.h> // for random()
+#include "midi.h"
 #define MESSAGE_START 63
 #define BIKER_POS 20 // position of biker
 
 // The characters to be shown and their colors.
 char scr[80][24];
-char color[80][24];
+//char color[80][24];
 
 // Data variables for the game...
 int enter_name;
@@ -51,12 +52,12 @@ int  get_seed(void);
 
 
 // Print a message at screen coordinate x,y in color c.
-void msg(int x, int y, int c, const char *s)
+void msg(int x, int y, const char *s)
 {
 	int n;
 	int len = strlen(s);
 	for(n=0; n<len && n+x<80; n++) {
-		color[x+n][y] = c;
+//		color[x+n][y] = c;
 		scr[x+n][y] = s[n];
 	}
 }
@@ -78,26 +79,26 @@ void updateScore() {
 	score++;
 	char buf[100];
 	sprintf(buf, "score:%9d", score);
-	msg(MESSAGE_START,0,0xe0, buf);
+	msg(MESSAGE_START,0, buf);
 }
 
 // Indicate a collision with a big red X.
 // Also display a "Game over" statement.
 void collision()
 {
-	msg(BIKER_POS,foot_height,0x90, "X");
-	msg(BIKER_POS-1,foot_height-1,0x90, "\\");
-	msg(BIKER_POS+1,foot_height-1,0x90, "/");
-	msg(BIKER_POS+1,foot_height+1,0x90, "\\");
-	msg(BIKER_POS-1,foot_height+1,0x90, "/");
+	msg(BIKER_POS,foot_height, "X");
+	msg(BIKER_POS-1,foot_height-1, "\\");
+	msg(BIKER_POS+1,foot_height-1, "/");
+	msg(BIKER_POS+1,foot_height+1, "\\");
+	msg(BIKER_POS-1,foot_height+1, "/");
 	if(score > highest_score) {
 		enter_name = 1;
 		highest_score = score;
 	}
 
-	msg(30,10, 0x0f, "   Game over   ");
+	msg(30,10, "   Game over   ");
 	if(!enter_name) {
-		msg(30,11, 0x0f," Press any key ");
+		msg(30,11," Press any key ");
 
 	}
 
@@ -108,8 +109,8 @@ void update_high() {
 	char get;
 	int index = -1;
 	int line = 11;
-	msg(20,line, 0x0f,"please enter your name:");
-	msg(43, line, 0xf, "          ");
+	msg(20,line,"please enter your name:");
+	msg(43, line, "          ");
 	render();
 	while(get != '\n') {
 		get = getchar();
@@ -126,42 +127,42 @@ void update_high() {
 			buf[lcv] = ' ';
 		}
 		buf[10] = '\0';
-		msg(43, line, 0xf, buf);
+		msg(43, line, buf);
 		render();
 	}
 	for(int lcv = 0; lcv < 11; lcv++) {
 		highest_name[lcv] = buf[lcv];
 	}
 
-	msg(MESSAGE_START, 2, 0xe0, "Highest scores:");
-	msg(MESSAGE_START, 3, 0xe0, highest_name);
+	msg(MESSAGE_START, 2, "Highest scores:");
+	msg(MESSAGE_START, 3, highest_name);
 	sprintf(buf, "  %d", score);
-	msg(MESSAGE_START, 4, 0xe0, buf);
-	msg(30,++line, 0x0f, " Press any key ");
+	msg(MESSAGE_START, 4, buf);
+	msg(30,++line, " Press any key ");
 	render();
 }
 
 void drawBiker(int foot, int height) {
-	msg(foot - 7, height, 0xa0, "(_)/(_)" );
-	msg(foot - 7, height - 1, 0xa0, " _ \\<_ " );
-	msg(foot - 7, height - 2, 0xa0, "   __o " );
+	msg(foot - 7, height, "(_)/(_)" );
+	msg(foot - 7, height - 1, " _ \\<_ " );
+	msg(foot - 7, height - 2, "   __o " );
 }
 
 void clearBiker(int foot, int height) {
-	msg(foot - 7, height, 0xa0, "       " );
-	msg(foot - 7, height - 1, 0xa0, "       " );
-	msg(foot - 7, height - 2, 0xa0, "       " );
+	msg(foot - 7, height, "       " );
+	msg(foot - 7, height - 1, "       " );
+	msg(foot - 7, height - 2, "       " );
 }
 
 
 void drawSky() {
 	int line = 1;
-	msg(1, line++, 0xe0, ",--.");
-	msg(1, line++, 0xe0, "    )");
-	msg(1,line++, 0xe0, "  _'-. _                                 ,--.");
-	msg(1, line++, 0xe0, " (    ) ),--.                           (    )");
-	msg(1,line++, 0xe0, "             )-._                        `--' ");
-	msg(1,line++, 0xe0, "_________________)");
+	msg(1, line++, ",--.");
+	msg(1, line++, "    )");
+	msg(1,line++, "  _'-. _                                 ,--.");
+	msg(1, line++, " (    ) ),--.                           (    )");
+	msg(1,line++, "             )-._                        `--' ");
+	msg(1,line++, "_________________)");
 }
 
 int generate_boolean() {
@@ -177,21 +178,21 @@ void init(void)
 	for(y=0; y<24; y++)
 		for(x=0; x<80; x++) {
 			scr[x][y] = ' ';
-			color[x][y] = 0xf0;
+//			color[x][y] = 0xf0;
 		}
 
 	for(x=0; x<80; x++) {
 		if (x==0 || x==79) {
-			msg(x,0,0xb0,"+");
-			msg(x,23,0xb0,"+");
+			msg(x,0,"+");
+			msg(x,23,"+");
 		} else {
-			msg(x,0,0xb0,"-");
-			msg(x,23,0xb0,"-");
+			msg(x,0,"-");
+			msg(x,23,"-");
 		}
 	}
 	for(y=1; y<23; y++) {
-		msg(0,y, 0xb0, "|");
-		msg(79,y, 0xb0, "|");
+		msg(0,y, "|");
+		msg(79,y, "|");
 	}
 
 
@@ -207,10 +208,10 @@ void init(void)
 	//	newportal();
 	//	newmoney();
 	char buf[30];
-	msg(MESSAGE_START, 2, 0xe0, "Highest scores:");
-	msg(MESSAGE_START, 3, 0xe0, highest_name);
+	msg(MESSAGE_START, 2, "Highest scores:");
+	msg(MESSAGE_START, 3, highest_name);
 	sprintf(buf, "  %d", highest_score);
-	msg(MESSAGE_START, 4, 0xe0, buf);
+	msg(MESSAGE_START, 4, buf);
 }
 
 // Dump the scr and color arrays to the terminal screen.
@@ -218,15 +219,15 @@ void render(void)
 {
 	int x,y;
 	home();
-	int col = color[0][0];
-	fgbg(col);
+//	int col = color[0][0];
+//	fgbg(col);
 	for(y=0; y<24; y++) {
 		setpos(0,y);
 		for(x=0; x<80; x++) {
-			if (color[x][y] != col) {
-				col = color[x][y];
-				fgbg(col);
-			}
+//			if (color[x][y] != col) {
+//				col = color[x][y];
+//				fgbg(col);
+//			}
 			putchar(scr[x][y]);
 		}
 	}
@@ -241,12 +242,12 @@ void splash(void)
 	for(y=0; y<24; y++)
 		for(x=0; x<80; x++) {
 			scr[x][y] = ' ';
-			color[x][y] = 0x70;
+//			color[x][y] = 0x70;
 		}
-	msg(30,8, 0x0a, "                 ");
-	msg(30,9, 0x0a, "       Biker     ");
-	msg(30,10,0x0a, "  Press Any Key  ");
-	msg(30,11,0x0a, "                 ");
+	msg(30,8, "                 ");
+	msg(30,9, "       Biker     ");
+	msg(30,10, "  Press Any Key  ");
+	msg(30,11, "                 ");
 	render();
 }
 
@@ -294,14 +295,14 @@ void jump() {
 }
 
 void drawStone(int x) {
-	msg(x-5, 22,0xa0, "STONE");
-	msg(x-4, 21,0xa0, "TON");
+	msg(x-5, 22, "STONE");
+	msg(x-4, 21, "TON");
 
 }
 
 void clearStone(int x) {
-	msg(x-5, 22,0xa0, "     ");
-	msg(x-5, 21,0xa0, "     ");
+	msg(x-5, 22, "     ");
+	msg(x-5, 21, "     ");
 }
 
 void updateStone() {
@@ -344,7 +345,6 @@ void update(char in)
 		phase = SPLASH;
 		collision();
 	}
-
 }
 
 void animate(void)

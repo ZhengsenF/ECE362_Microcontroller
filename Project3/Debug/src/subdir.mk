@@ -6,18 +6,27 @@
 C_SRCS += \
 ../src/game.c \
 ../src/main.c \
+../src/midi.c \
+../src/music.c \
+../src/scale.c \
 ../src/syscalls.c \
 ../src/system_stm32f0xx.c 
 
 OBJS += \
 ./src/game.o \
 ./src/main.o \
+./src/midi.o \
+./src/music.o \
+./src/scale.o \
 ./src/syscalls.o \
 ./src/system_stm32f0xx.o 
 
 C_DEPS += \
 ./src/game.d \
 ./src/main.d \
+./src/midi.d \
+./src/music.d \
+./src/scale.d \
 ./src/syscalls.d \
 ./src/system_stm32f0xx.d 
 
